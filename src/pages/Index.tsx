@@ -23,15 +23,15 @@ const Index = () => {
             <span>Just Law Education</span>
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm">
-            <a href="#mission" className="hover:text-black">Mission</a>
-            <a href="#about" className="hover:text-black">About</a>
-            <a href="#services" className="hover:text-black">Services</a>
-            <a href="#tools" className="hover:text-black">AI Tools</a>
-            <a href="#books" className="hover:text-black">Books</a>
-            <a href="#speaking" className="hover:text-black">Speaking</a>
-            <a href="#testimonials" className="hover:text-black">Testimonials</a>
-            <a href="#community" className="hover:text-black">Community</a>
-            <a href="#contact" className="inline-flex items-center gap-1 rounded-full border px-3 py-1.5 hover:bg-neutral-50">
+            <a href="#mission" className="hover:text-foreground">Mission</a>
+            <a href="#about" className="hover:text-foreground">About</a>
+            <a href="#services" className="hover:text-foreground">Services</a>
+            <a href="#tools" className="hover:text-foreground">AI Tools</a>
+            <a href="#books" className="hover:text-foreground">Books</a>
+            <a href="#speaking" className="hover:text-foreground">Speaking</a>
+            <a href="#testimonials" className="hover:text-foreground">Testimonials</a>
+            <a href="#community" className="hover:text-foreground">Community</a>
+            <a href="#contact" className="inline-flex items-center gap-1 rounded-full border px-3 py-1.5 hover:bg-secondary">
               Contact <ChevronRight className="w-4 h-4" />
             </a>
           </div>
@@ -42,7 +42,7 @@ const Index = () => {
       <section id="home" className="relative overflow-hidden bg-gradient-to-b from-card to-secondary">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="inline-block rounded-full bg-[#272f3c] text-white text-xs font-medium px-3 py-1 mb-4">Access to Justice</p>
+            <p className="inline-block rounded-full bg-primary text-primary-foreground text-xs font-medium px-3 py-1 mb-4">Access to Justice</p>
             <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">
               Easy-to-use legal guidance for <span className="underline decoration-amber-400 decoration-4 underline-offset-4">self-represented people</span>
             </h1>
@@ -349,7 +349,7 @@ const Index = () => {
               <button type="submit" className="rounded-xl px-4 py-2 bg-primary text-primary-foreground font-medium hover:bg-primary/90">
                 Send
               </button>
-              {sent && <p className="text-sm text-green-700">Thanks — message captured locally for demo.</p>}
+              {sent && <p className="text-sm text-green-600 dark:text-green-400">Thanks — message captured locally for demo.</p>}
             </div>
           </form>
         </div>
